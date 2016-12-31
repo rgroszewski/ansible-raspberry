@@ -1,0 +1,6 @@
+[servers:children]
+pis
+
+[pis]
+pi01.local
+pi02.local

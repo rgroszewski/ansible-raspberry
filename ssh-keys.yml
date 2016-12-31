@@ -1,0 +1,5 @@
+---
+- hosts: [servers]
+  tasks:
+    - name: setup authorized key
+      authorized_key: user=pi key="{{ lookup('file', '~/.ssh/id_rsa.pub') }}"
